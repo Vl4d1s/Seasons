@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import SessonDisplay from "./SessonDisplay";
+import SeasonDisplay from "./SeasonDisplay";
 
 class App extends React.Component {
   constructor(props) {
@@ -22,7 +22,7 @@ class App extends React.Component {
       return <div>{this.state.errorMessage}</div>;
     }
     if (this.state.lat && !this.state.errorMessage) {
-      return <SessonDisplay lat={this.state.lat} />;
+      return <SeasonDisplay lat={this.state.lat} />;
     }
     return <div>Loading...</div>;
   }
